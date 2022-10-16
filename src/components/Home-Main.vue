@@ -1,17 +1,21 @@
 <template>
   <div>
-    <div>Home</div>
-    <h3 class="he">Nagap</h3>
+    <Navbar />
+    <Searchbar />
   </div>
 </template>
 
 <script>
-export default {};
-console.log("Hello");
+import Navbar from "./header-main/Navbar.vue";
+import Searchbar from "./header-main/Searchbar.vue";
+
+export default {
+  components: {
+    Navbar,
+    Searchbar,
+  },
+};
 </script>
 
 <style>
-.he {
-  color: red;
-}
 </style>
